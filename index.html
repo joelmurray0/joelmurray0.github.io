@@ -1,11 +1,28 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
      <head>
           <title>Joel</title>
      </head>
+
+     <nav>
+
+     </nav>
+
+
+     <style>
+          
+     </style>
      
-     <body>
-          <h1>Heading</h1>
-          <h2>Subheading</h2>
+     <body style="background-color: aquamarine;">
+          <h1 style="font-size:75px; text-align: center; font-family: 'Franklin Gothic Medium';"> <b>Online portfolio </b></h1>
+
+          <hr>
+
+          <h2 id="change" style="font-size:50px;font-family:verdana"> <b>Subheading</b><sup>2</sup><ins>supersub</ins> </h2>
+
+          <div id="change" style="color:blueviolet;"  title="purple"> This is a purple paragraph<sub>2</sub><mark>marked</mark></div>
 
           <div id="myFirstDiv">
                <img src="img/strawberries.jpg" alt="image of strawberries"/>
@@ -16,6 +33,37 @@
                <br/>
                <a href="http://google.co.uk">Click this for fun</a>
           </div>    
+          <pre>
+\              \
+/              /
+\              \
+/              /
+\              \
+/              /
+          </pre>
+
+          <button type="button"
+          onclick="document.getElementById('demo').innerHTML = Date()">
+          USE me!</button>
+
+          <p id="demo"></p>
+
+          <script>
+               function myFunction(){
+                    document.getElementById("change").style.fontSize = "20px"
+                    document.getElementById("change").style.color = "red"
+                    document.getElementById("change").style.backgroundColor = "yellow"
+               }
+          </script>
+          <button type="button" onclick="myFunction()">Click for a BIG change</button>
+
+          <noscript>You appear to not have javascript.</noscript>
+
+          <script>
+               function projectsPage(){
+                    <a href=""> </a>
+               }
+          </script>
      </body>
      
 </html>
