@@ -25,6 +25,7 @@ The Planning Document is to be attached to the Google Classroom project post.
 
 ## Plan
 * Create a page with 3 sections: an `about me`, `my experience in CS`, and `past/future projects`
+* Create extra `subsections` for easier access and understandability
 * Embed youtube video
 * Link to Simon Langton CS page
 * Styling using bootstrap framework
