@@ -29,6 +29,6 @@ The Planning Document is to be attached to the Google Classroom project post.
 * Embed youtube video
 * Link to Simon Langton CS page
 * Styling using bootstrap framework
-
-
-
+* Add `icons` for clarity
+* Coherent theme across the website
+* Optimise for many devices
