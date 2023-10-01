@@ -8,9 +8,21 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
      <link rel="icon" type="image/x-icon" href="img/profile picture.png">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://kit.fontawesome.com/54bf846983.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
+
+     #pfp {
+          height:75px;
+     }
+
+     #nav {
+          padding: 15px;
+          border-bottom: solid;
+          border-color: #696969;
+     }
+
      #about {
           padding-bottom: 40px;
      }
@@ -53,6 +65,7 @@
 
      #sidebar {
           border-right: solid;
+          border-bottom: solid;
           border-color: #696969;
           position:relative;
           padding-left: 20px;
@@ -136,26 +149,32 @@
 </style>
 
 <body>
+
+     <div id="nav" class="navbar">
+          <h1><i class="fa-solid fa-user-secret">&nbsp;</i>Joel's Website</h1>
+          <img id="pfp" src="/img/profile picture.png">
+     </div>
+
      <div class="row">
           <div id="sidebar" class="col-sm-2">
-               <a href="#" data-bs-toggle="dropdown" aria-expanded="false">About me</a>
+               <h5>About me</h5>
 
                     <ul class="dropdown">
-                         <li><a data-bs-toggle="dropdown" href="#" onclick="show_pets()">Pets</a> </li>
-                         <li><a data-bs-toggle="dropdown" href="#" onclick="show_esports()">Games</a> </li>
+                         <li><a data-bs-toggle="dropdown" href="#" onclick="show_pets()"><i class="fa-solid fa-dog">&nbsp;</i>Pets</a>  </li>
+                         <li><a data-bs-toggle="dropdown" href="#" onclick="show_esports()"><i class="fa-solid fa-gamepad">&nbsp;</i>Games</a> </li>
                     </ul>
 
-               <a href="#" data-bs-toggle="dropdown" aria-expanded="false">CS Experience</a>
+               <h5>CS Experience</h5>
 
                <ul class="dropdown">
-                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_GCSE()">GCSE</a></li>
+                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_GCSE()"><i class="fa-solid fa-book-open">&nbsp;</i>GCSE</a></li>
                </ul>
 
-               <a href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+               <h5>Projects</h5>
 
                <ul class="dropdown">
-                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_github()">Github</a> </li>
-                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_readingRobot()">ReadingRobot</a> </li>
+                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_github()"><i class="fa-brands fa-github">&nbsp;</i>Github</a> </li>
+                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_readingRobot()"><i class="fa-solid fa-robot">&nbsp;</i>ReadingRobot</a> </li>
                </ul>
           </div>
                     
@@ -163,7 +182,7 @@
                <div id="pets">
                     <div class="col">
                          <div class="card">
-                              <div class="card-header">Pets</div>
+                              <div class="card-header"><i class="fa-solid fa-dog">&nbsp;</i> Pets</div>
                               <div class="card-body">
                                    <div class="row">
                                         <div id="border" class="col-sm-4">
@@ -191,9 +210,20 @@
                                              </div>
                                         </div>
                                         <div class="col-sm-8">
-                                             These are both of my pets.
-                                             As you can see they get along very well!
-                                             Kiera is 6 years older than Buddy (Kiera is 7 and Buddy is 1).
+                                             <h5>Buddy</h5>
+
+                                             <div>Buddy is a bundle of boundless energy and enthusiasm. He entered life a year ago as a tiny pup and since then, he has grown into a loyal and loving member of the family. With his wagging tail and bright, expressive eyes, Buddy has a knack for melting hearts.
+                                                  His favorite activities include chasing after tennis balls, going on long walks in the park, greetings at the door with joyful. Buddy's boundless curiosity keeps him exploring every nook and cranny of the house, often leading to charmingly mischievous antics.
+                                                  But it's not just his playfulness that makes Buddy special. He has an uncanny ability to sense emotions. On the days when you feel down or tired, Buddy is right there by your side, offering a comforting nuzzle or a warm cuddle. His presence is a constant reminder that sometimes, all you need is a loyal friend to make everything better.
+                                             </div>
+
+                                             <br>
+                                             <h5>Kiera</h5>
+
+                                             <div>Kiera, on the other hand, is the regal and serene presence in your household. At the age of 7, she's had her fair share of adventures and has gracefully matured into the epitome of feline elegance. Her sleek, ebony fur and bright, emerald eyes exude an air of mystery that draws you in.
+                                                  Kiera has a penchant for perching herself on high vantage points, observing the world with an air of quiet contemplation. She loves to sunbathe on the table, her graceful silhouette cast in golden light. Kiera's purring is a soothing melody that accompanies your quiet moments at home, bringing a sense of tranquility to your day.
+                                                  Despite her aloof exterior, Kiera has a soft spot for Buddy. The two of them share a unique camaraderie that transcends the traditional dog-cat dynamic. They often engage in playful chases around the house, showcasing the unique bond that can exist between two very different species.
+                                             </div>
                                         </div>
                                    </div>
                               </div>
@@ -204,7 +234,7 @@
                <div id="esports">
                     <div class="col">
                          <div class="card">
-                              <div class="card-header">Esports</div>
+                              <div class="card-header"><i class="fa-solid fa-gamepad">&nbsp;</i> Esports</div>
                               <div id="bborder" class="card-body">
                                         <div class="row">
                                              <div id="border" class="col-sm-6">
@@ -229,7 +259,7 @@
                <div id="experience">
                     <div class="col">
                          <div class="card">
-                              <div class="card-header">CS experience</div>
+                              <div class="card-header"><i class="fa-solid fa-book-open">&nbsp;</i>CS experience</div>
                
                               <div id="bborder" class="card-body">CS GCSE at 
                                    <a target="_blank" href="https://thelangton.org.uk/curriculum/computer-science/">Simon Langton Grammar School for Boys</a>
@@ -242,7 +272,7 @@
                <div id="readingRobot">
                     <div class="col">                         
                          <div class="card">
-                              <div class="card-header">ReadingRobot</div>
+                              <div class="card-header"><i class="fa-solid fa-robot">&nbsp;</i>ReadingRobot</div>
 
                               <div id="bborder" class="card-body">
                                    <div class="row">
@@ -274,7 +304,7 @@
                <div id="github">
                     <div class="col">
                          <div class="card">
-                              <div class="card-header">Github</div>
+                              <div class="card-header"><i class="fa-brands fa-github">&nbsp;</i>Github</div>
 
                               <div id="bborder" class="card-body">
                                    <div class="row">
