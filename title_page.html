@@ -12,9 +12,44 @@
 </head>
 
 <style>
+     a {
+          color:white;
+     }
 
-     #pfp {
-          height:75px;
+     #about {
+          padding-bottom: 40px;
+     }
+
+     #bborder {
+          border-top: solid;
+          border-bottom: solid;
+          border-color: #696969;
+     }
+
+     #border {
+          border-right: solid;
+          border-color: #696969;
+          position:relative;
+     }
+
+     .card-header {
+          font-size: 25px;
+     }
+
+     #experience {
+          padding-bottom: 40px;
+          display: none;
+     }
+
+     #github {
+          display: none;
+     }
+
+     .mySlides {display: none}
+     img {vertical-align: left;}
+
+     .gap {
+          padding: 5px;
      }
 
      #nav {
@@ -23,8 +58,12 @@
           border-color: #696969;
      }
 
-     #about {
-          padding-bottom: 40px;
+     .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
      }
 
      #pets, #esports {
@@ -36,57 +75,8 @@
           display: block;
      }
 
-     .gap {
-          padding: 5px;
-     }
-
-     #video {
-          width: 590px;
-          height: 332px;
-     }
-
-     #bborder {
-          border-top: solid;
-          border-bottom: solid;
-          border-color: #696969;
-     }
-     
-
-     #experience {
-          padding-bottom: 40px;
-          display: none;
-     }
-
-     #border {
-          border-right: solid;
-          border-color: #696969;
-          position:relative;
-     }
-
-     #sidebar {
-          border-right: solid;
-          border-bottom: solid;
-          border-color: #696969;
-          position:relative;
-          padding-left: 20px;
-          font-size: 15px;
-     }
-
-     a {
-          color:white;
-     }
-
-     .card-header {
-          font-size: 25px;
-     }
-     
-     .mySlides {display: none}
-     img {vertical-align: left;}
-
-     .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
+     #pfp {
+          height:75px;
      }
 
      .prev, .next {
@@ -104,13 +94,32 @@
           user-select: none;
      }
 
+     .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+     }
+
      .next {
           right: 0;
           border-radius: 3px 0 0 3px;
      }
 
-     .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
+     #readingRobot {
+          display: none;
+     }
+     
+     #sidebar {
+          border-right: solid;
+          border-bottom: solid;
+          border-color: #696969;
+          position:relative;
+          padding-left: 20px;
+          font-size: 15px;
+     }
+
+     .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
      }
 
      .text {
@@ -123,20 +132,13 @@
           text-align: center;
      }
 
-     .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
+     #video {
+          width: 590px;
+          height: 332px;
      }
 
-     #github {
-          display: none;
-     }
-
-     #readingRobot {
-          display: none;
+     #writing {
+          font-family:Arial, Helvetica, sans-serif;
      }
 
      @media only screen and (max-width: 425px) {
@@ -149,7 +151,6 @@
 </style>
 
 <body>
-
      <div id="nav" class="navbar">
           <h1><i class="fa-solid fa-user-secret">&nbsp;</i>Joel's Website</h1>
           <img id="pfp" src="/img/profile picture.png">
@@ -175,6 +176,12 @@
                <ul class="dropdown">
                     <li><a data-bs-toggle="dropdown" href="#" onclick="show_github()"><i class="fa-brands fa-github">&nbsp;</i>Github</a> </li>
                     <li><a data-bs-toggle="dropdown" href="#" onclick="show_readingRobot()"><i class="fa-solid fa-robot">&nbsp;</i>ReadingRobot</a> </li>
+               </ul>
+
+               <h5>More Information</h5>
+
+               <ul class="dropdown">
+                    <li><a data-bs-toggle="dropdown" href="#" onclick="show_email()"><i class="fa-solid fa-envelope">&nbsp;</i>Email</a> </li> <!--WHERE TO CARRY ON IN JS-->
                </ul>
           </div>
                     
@@ -212,7 +219,8 @@
                                         <div class="col-sm-8">
                                              <h5>Buddy</h5>
 
-                                             <div>Buddy is a bundle of boundless energy and enthusiasm. He entered life a year ago as a tiny pup and since then, he has grown into a loyal and loving member of the family. With his wagging tail and bright, expressive eyes, Buddy has a knack for melting hearts.
+                                             <div id="writing">
+                                                  Buddy is a bundle of boundless energy and enthusiasm. He entered life a year ago as a tiny pup and since then, he has grown into a loyal and loving member of the family. With his wagging tail and bright, expressive eyes, Buddy has a knack for melting hearts.
                                                   His favorite activities include chasing after tennis balls, going on long walks in the park, greetings at the door with joyful. Buddy's boundless curiosity keeps him exploring every nook and cranny of the house, often leading to charmingly mischievous antics.
                                                   But it's not just his playfulness that makes Buddy special. He has an uncanny ability to sense emotions. On the days when you feel down or tired, Buddy is right there by your side, offering a comforting nuzzle or a warm cuddle. His presence is a constant reminder that sometimes, all you need is a loyal friend to make everything better.
                                              </div>
@@ -220,7 +228,8 @@
                                              <br>
                                              <h5>Kiera</h5>
 
-                                             <div>Kiera, on the other hand, is the regal and serene presence in your household. At the age of 7, she's had her fair share of adventures and has gracefully matured into the epitome of feline elegance. Her sleek, ebony fur and bright, emerald eyes exude an air of mystery that draws you in.
+                                             <div id="writing">
+                                                  Kiera, on the other hand, is the regal and serene presence in the household. At the age of 7, she's had her fair share of adventures and has gracefully matured into the epitome of feline elegance. Her sleek, ebony fur and bright, emerald eyes exude an air of mystery that draws you in.
                                                   Kiera has a penchant for perching herself on high vantage points, observing the world with an air of quiet contemplation. She loves to sunbathe on the table, her graceful silhouette cast in golden light. Kiera's purring is a soothing melody that accompanies your quiet moments at home, bringing a sense of tranquility to your day.
                                                   Despite her aloof exterior, Kiera has a soft spot for Buddy. The two of them share a unique camaraderie that transcends the traditional dog-cat dynamic. They often engage in playful chases around the house, showcasing the unique bond that can exist between two very different species.
                                              </div>
@@ -243,7 +252,7 @@
                                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                              </div>
                          
-                                             <div class="col-sm-6">                                                          
+                                             <div id="writing" class="col-sm-6">                                                          
                                                   This is my favourite game at the moment. I play it on the weekends with my friends. 
                                                   It's a 5v5 tactical first person shooter with lots of different abilities. 
                                                   It can make the game look very confusing to those who haven't get experience with it (e.g. this video to the left). 
@@ -290,7 +299,7 @@
                                         </div>
                     
                                         <div class="col-sm-6">
-                                             <div class="container-fluid">
+                                             <div id="writing" class="container-fluid">
                                                   Reading Robot. The plans for this project aren't fully secured right now, 
                                                   but the plan is to create something utilising machine learning. 
                                              </div>
@@ -322,7 +331,7 @@
                                         </div>
 
                                         <div class="col-sm-6">
-                                             <div class="container-fluid">
+                                             <div id="writing" class="container-fluid">
                                                   This is my Github page. Where all the magic happens!
                                              </div>
                                         </div>
@@ -360,6 +369,10 @@
      }
      slides[slideIndex-1].style.display = "block";  
      dots[slideIndex-1].className += " active";
+     }
+
+     function show_email() {
+          ...
      }
 
      function show_pets() {
