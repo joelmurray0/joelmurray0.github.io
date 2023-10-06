@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+     <title>Joel</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="icon" type="image/x-icon" href="img/profile picture.png">
+     <link href="/styles.css" rel="stylesheet" type="text/css">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://kit.fontawesome.com/54bf846983.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <div id="nav" class="navbar">
+          <h1><i class="fa-solid fa-user-secret">&nbsp;</i>Joel's Website</h1>
+          <img id="pfp" src="/img/profile picture.png">
+     </div>
+
+     <div class="row">
+          <div id="sidebar" class="col-sm-2">
+               <h5>About me</h5>
+
+                    <ul class="dropdown">
+                         <li><a id="dropdown_btn" data-bs-toggle="dropdown" href="#" onclick="show_pets()"><i class="fa-solid fa-dog">&nbsp;</i>Pets <i class="fa-solid fa-link"></i></a>  </li>
+                         <li><a id="dropdown_btn" data-bs-toggle="dropdown" href="#" onclick="show_esports()"><i class="fa-solid fa-gamepad">&nbsp;</i>Games <i class="fa-solid fa-link"></i></a> </li>
+                    </ul>
+
+               <h5>CS Experience</h5>
+
+               <ul class="dropdown">
+                    <li><a id="dropdown_btn" data-bs-toggle="dropdown" href="#" onclick="show_GCSE()"><i class="fa-solid fa-book-open">&nbsp;</i>GCSE <i class="fa-solid fa-link"></i></a></li>
+               </ul>
+
+               <h5>Projects</h5>
+
+               <ul class="dropdown">
+                    <li><a id="dropdown_btn" data-bs-toggle="dropdown" href="#" onclick="show_github()"><i class="fa-brands fa-github">&nbsp;</i>Github <i class="fa-solid fa-link"></i></a> </li>
+                    <li><a id="dropdown_btn" data-bs-toggle="dropdown" href="#" onclick="show_readingRobot()"><i class="fa-solid fa-robot">&nbsp;</i>Text-to-action Robot <i class="fa-solid fa-link"></i></a> </li>
+               </ul>
+
+               <h5>More information</h5>
+
+               <ul class="dropdown">
+                    <li><a id="dropdown_btn" data-bs-toggle="dropdown" href="#" onclick="show_email()"><i class="fa-solid fa-envelope"></i>&nbsp;Email <i class="fa-solid fa-link"></i></a></li>
+               </ul>
+          </div>
+                    
+          <div class="col-sm-8">
+               <div id="pets">
+                    <div class="col">
+                         <div class="card">
+                              <div class="card-header"><i class="fa-solid fa-dog">&nbsp;</i> Pets</div>
+                              <div class="card-body">
+                                   <div class="row">
+                                        <div id="border" class="col-sm-4">
+                                             <div class="slideshow-container">
+                                                  <div class="mySlides">
+                                                       <div class="numbertext">1 / 3</div>
+                                                       <img src="img/buddy+kiks.jpg" style="width:100%">
+                                                       <div class="text">Buddy and Kiera</div>
+                                                  </div>
+                    
+                                                  <div class="mySlides">
+                                                       <div class="numbertext">2 / 3</div>
+                                                       <img src="img/buddy.jpg" style="width:100%">
+                                                       <div class="text">Buddy</div>
+                                                  </div>
+                    
+                                                  <div class="mySlides">
+                                                       <div class="numbertext">3 / 3</div>
+                                                       <img src="img/kiks.jpg" style="width:100%">
+                                                       <div class="text">Kiera</div>
+                                                  </div>
+                    
+                                                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                                  <a class="next" onclick="plusSlides(1)">❯</a>
+                                             </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                             <h5>Buddy</h5>
+
+                                             <div id="writing">
+                                                  Buddy is a bundle of boundless energy and enthusiasm. He entered life a year ago as a tiny pup and since then, he has grown into a loyal and loving member of the family. With his wagging tail and bright, expressive eyes, Buddy has a knack for melting hearts.
+                                                  His favorite activities include chasing after tennis balls, going on long walks in the park, greetings at the door with joyful. Buddy's boundless curiosity keeps him exploring every nook and cranny of the house, often leading to charmingly mischievous antics.
+                                                  But it's not just his playfulness that makes Buddy special. He has an uncanny ability to sense emotions. On the days when you feel down or tired, Buddy is right there by your side, offering a comforting nuzzle or a warm cuddle. His presence is a constant reminder that sometimes, all you need is a loyal friend to make everything better.
+                                             </div>
+
+                                             <br>
+                                             <h5>Kiera</h5>
+
+                                             <div id="writing">
+                                                  Kiera, on the other hand, is the regal and serene presence in the household. At the age of 7, she's had her fair share of adventures and has gracefully matured into the epitome of feline elegance. Her sleek, ebony fur and bright, emerald eyes exude an air of mystery that draws you in.
+                                                  Kiera has a penchant for perching herself on high vantage points, observing the world with an air of quiet contemplation. She loves to sunbathe on the table, her graceful silhouette cast in golden light. Kiera's purring is a soothing melody that accompanies your quiet moments at home, bringing a sense of tranquility to your day.
+                                                  Despite her aloof exterior, Kiera has a soft spot for Buddy. The two of them share a unique camaraderie that transcends the traditional dog-cat dynamic. They often engage in playful chases around the house, showcasing the unique bond that can exist between two very different species.
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="esports">
+                    <div class="col">
+                         <div class="card">
+                              <div class="card-header"><i class="fa-solid fa-gamepad">&nbsp;</i> Esports</div>
+                              <div id="bborder" class="card-body">
+                                        <div class="row">
+                                             <div id="border" class="col-sm-6">
+                                                  <iframe id="video" src="https://www.youtube-nocookie.com/embed/q4LQdAVusr0?si=pKDo6FN7Wq1WxrQU&amp;start=1182"
+                                                  title="YouTube video player" frameborder="0" 
+                                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                             </div>
+                         
+                                             <div id="writing" class="col-sm-6">                                                          
+                                                  This is my favourite game at the moment. I play it on the weekends with my friends. 
+                                                  It's a 5v5 tactical first person shooter with lots of different abilities. 
+                                                  It can make the game look very confusing to those who haven't get experience with it (e.g. this video to the left). 
+                                                  This is a video of the first map in the World Championship finals, so this is a very high-level version of the game. 
+                                                  Definitely not what you would see if you played the game recreationally.
+                                             </div>
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="experience">
+                    <div class="col">
+                         <div class="card">
+                              <div class="card-header"><i class="fa-solid fa-book-open">&nbsp;</i>CS experience</div>
+               
+                              <div id="bborder" class="card-body">CS GCSE at 
+                                   <a target="_blank" href="https://thelangton.org.uk/curriculum/computer-science/">Simon Langton Grammar School for Boys</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               
+
+               <div id="readingRobot">
+                    <div class="col">                         
+                         <div class="card">
+                              <div class="card-header"><i class="fa-solid fa-robot">&nbsp;</i>Text-to-action robot</div>
+
+                              <div id="bborder" class="card-body">
+                                   <div class="row">
+                                        <div id="border" class="col-sm-4">
+
+                                             <div class="container-fluid">
+                                                  <h3>Text-to-action robot</h3>
+                                             </div>
+                    
+                                             <a target="_blank" href="https://github.com/d3l7/Text-To-Action-Robot">Text-to-action robot</a>
+                    
+                                             <div class="row gap">
+                                                  <span class="badge bg-success">Active</span>
+                                             </div>
+                                        </div>
+                    
+                                        <div class="col-sm-6">
+                                             <div id="writing" class="container-fluid">
+                                                  We plan on creating a robot which can read text and given that information do an action. 
+                                                  Actions are unsure right now and this is to be build with the lego mindstorms as our Wednesday P5 project.
+                                                  Read more on the github page in README.md
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               
+               <div id="github">
+                    <div class="col">
+                         <div class="card">
+                              <div class="card-header"><i class="fa-brands fa-github">&nbsp;</i>Github</div>
+
+                              <div id="bborder" class="card-body">
+                                   <div class="row">
+                                        <div id="border" class="col-sm-4">
+                                        
+                                             <div class="container-fluid">
+                                                  <h3>Github Page</h3>
+                                             </div>
+          
+                                             <a target="_blank" href="https://github.com/joelmurray0">Github</a>
+          
+                                             <div class="row gap">
+                                                  <span class="badge bg-success">Active</span>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                             <div class="container-fluid">
+                                                  This is my Github page. Where all of my old/current CS projects of worth are stored.
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="email">
+                    <div class="col">
+                         <div class="card">
+                              <div class="card-header"><i class="fa-solid fa-envelope">&nbsp;</i>Email</div>
+
+                              <div id="bborder" class="card-body">
+                                   <div class="row">
+                                        <div id="border" class="col-sm-6">
+                                             <div class="container-fluid">
+                                                  <input type="text" value="18jmurray@thelangton.org.uk" id="myInput"></input>
+                                                  <div>
+                                                       <p id="copiee">18jmurray@thelangton.org.uk</p> 
+                                                       
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                             <button id="copier" type="button" class="btn btn-outline-light btn-block" onclick="copy()">Copy text &nbsp; <i class="fa-regular fa-copy"></i></button>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          <div class="col-sm-2"></div>
+     </div>
+
+     <script src="/script.js"></script>
+</body>
