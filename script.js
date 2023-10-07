@@ -26,6 +26,8 @@ dots[slideIndex-1].className += " active";
 }
 
 function show_pets() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
      document.getElementById("email").style.display = "none";
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("github").style.display = "none";
@@ -35,6 +37,8 @@ function show_pets() {
 }
 
 function show_esports() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
      document.getElementById("email").style.display = "none";
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("github").style.display = "none";
@@ -44,6 +48,8 @@ function show_esports() {
 }
 
 function show_GCSE() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
      document.getElementById("email").style.display = "none";
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("github").style.display = "none";
@@ -53,6 +59,8 @@ function show_GCSE() {
 }
 
 function show_github() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
      document.getElementById("email").style.display = "none";
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("pets").style.display = "none";
@@ -62,6 +70,8 @@ function show_github() {
 }
 
 function show_readingRobot() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
      document.getElementById("email").style.display = "none";
      document.getElementById("github").style.display = "none";
      document.getElementById("pets").style.display = "none";
@@ -71,12 +81,47 @@ function show_readingRobot() {
 }
 
 function show_email() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
      document.getElementById("github").style.display = "none";
      document.getElementById("pets").style.display = "none";
      document.getElementById("esports").style.display = "none";
      document.getElementById("experience").style.display = "none";
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("email").style.display = "block";
+}
+
+function show_me() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("github").style.display = "none";
+     document.getElementById("pets").style.display = "none";
+     document.getElementById("esports").style.display = "none";
+     document.getElementById("experience").style.display = "none";
+     document.getElementById("readingRobot").style.display = "none";
+     document.getElementById("email").style.display = "none";
+     document.getElementById("subjects").style.display = "block";
+}
+
+function show_web() {
+     document.getElementById("github").style.display = "none";
+     document.getElementById("pets").style.display = "none";
+     document.getElementById("esports").style.display = "none";
+     document.getElementById("experience").style.display = "none";
+     document.getElementById("readingRobot").style.display = "none";
+     document.getElementById("email").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
+     document.getElementById("website").style.display = "block";
+}
+
+function show_subjects() {
+     document.getElementById("github").style.display = "none";
+     document.getElementById("pets").style.display = "none";
+     document.getElementById("esports").style.display = "none";
+     document.getElementById("experience").style.display = "none";
+     document.getElementById("readingRobot").style.display = "none";
+     document.getElementById("email").style.display = "none";
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "block";
 }
 
 function copy() {
@@ -86,4 +131,6 @@ function copy() {
      copyText.setSelectionRange(0, 99999);
    
      navigator.clipboard.writeText(copyText.value);
+
+     
    }
