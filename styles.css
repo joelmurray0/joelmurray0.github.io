@@ -2,6 +2,10 @@
      height:75px;
 }
 
+#a-level {
+     font-size: 20px;
+}
+
 #nav {
      padding: 15px;
      border-bottom: solid;
@@ -12,7 +16,7 @@
      padding-bottom: 40px;
 }
 
-#pets, #esports, #experience, #email, #github, #readingRobot {
+#pets, #esports, #experience, #email, #github, #readingRobot, #subjects, #website {
      padding-bottom: 40px;
      display: none;
 }
@@ -87,10 +91,6 @@ img {vertical-align: left;}
      display: none;
 }
 
-#copiere {
-     padding-right: 200px;
-}
-
 .next {
      right: 0;
      border-radius: 3px 0 0 3px;
@@ -131,7 +131,7 @@ li {
 }
 
 p {
-     font-size: 30px
+     font-size: 25px
 }
 
 #dropdown_btn {
@@ -140,4 +140,8 @@ p {
 
 .fa-link {
      font-size: 15px;
+}
+
+#exp {
+     font-size: 20px;
 }
