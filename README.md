@@ -24,11 +24,31 @@ Screens or wireframes that show the flow of your web page, with explanations;
 The Planning Document is to be attached to the Google Classroom project post.
 
 ## Plan
-* Create a page with 3 sections: an `about me`, `my experience in CS`, and `past/future projects`
-* Create extra `subsections` for easier access and understandability
-* Embed youtube video
-* Link to Simon Langton CS page
+* Create a page with multiple sections: an `About me`, `CS experience`, `Projects` and `More information`
+* Create extra `subsections` (`pets`, `esports`, `subjects`, `text-to-action robot`, `github` and `website`) for easier access and understandability
+* Create a framework for a card to be shifted in and out of the `viewing screen` (only 1 at a time to avoid clutter)
 * Styling using bootstrap framework
 * Add `icons` for clarity
+* Removed normal link appearance but compensated for it with an icon where useful. All links are obvious.
 * Coherent theme across the website
-* Optimise for many devices
+* Optimise for many devices - helps using grid system in bootstrap
+  
+## `pets`
+* About my animals
+* Include a `gallery` for ease of viewing
+
+## `esports`
+* Embed youtube video
+* General text/content describing the game
+
+## `CS experience`
+* Link to Simon Langton CS page
+* Link opens in new page
+
+## `Projects`
+* Visual representation if the project is active
+* Description of project
+* Link to the github repository/profile
+
+## `More information`
+* `Copy button` for email
