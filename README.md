@@ -37,6 +37,10 @@ The Planning Document is to be attached to the Google Classroom project post.
 * About my animals
 * Include a `gallery` for ease of viewing
 
+## `My subjects`
+* Detailling what subjects I take
+* How long I plan to keep them for
+
 ## `esports`
 * Embed youtube video
 * General text/content describing the game
