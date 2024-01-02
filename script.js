@@ -34,6 +34,19 @@ function show_pets() {
      document.getElementById("experience").style.display = "none";
      document.getElementById("esports").style.display = "none";
      document.getElementById("pets").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
+}
+
+function show_mastermind() {
+     document.getElementById("website").style.display = "none";
+     document.getElementById("subjects").style.display = "none";
+     document.getElementById("email").style.display = "none";
+     document.getElementById("readingRobot").style.display = "none";
+     document.getElementById("github").style.display = "none";
+     document.getElementById("experience").style.display = "none";
+     document.getElementById("esports").style.display = "none";
+     document.getElementById("pets").style.display = "none";
+     document.getElementById("mastermind").style.display = "block";
 }
 
 function show_esports() {
@@ -45,6 +58,7 @@ function show_esports() {
      document.getElementById("experience").style.display = "none";
      document.getElementById("pets").style.display = "none";
      document.getElementById("esports").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_GCSE() {
@@ -56,6 +70,7 @@ function show_GCSE() {
      document.getElementById("pets").style.display = "none";
      document.getElementById("esports").style.display = "none";
      document.getElementById("experience").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_github() {
@@ -67,6 +82,7 @@ function show_github() {
      document.getElementById("esports").style.display = "none";
      document.getElementById("experience").style.display = "none";
      document.getElementById("github").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_readingRobot() {
@@ -78,6 +94,7 @@ function show_readingRobot() {
      document.getElementById("esports").style.display = "none";
      document.getElementById("experience").style.display = "none";
      document.getElementById("readingRobot").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_email() {
@@ -89,6 +106,7 @@ function show_email() {
      document.getElementById("experience").style.display = "none";
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("email").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_me() {
@@ -100,6 +118,7 @@ function show_me() {
      document.getElementById("readingRobot").style.display = "none";
      document.getElementById("email").style.display = "none";
      document.getElementById("subjects").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_web() {
@@ -111,6 +130,7 @@ function show_web() {
      document.getElementById("email").style.display = "none";
      document.getElementById("subjects").style.display = "none";
      document.getElementById("website").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function show_subjects() {
@@ -122,6 +142,7 @@ function show_subjects() {
      document.getElementById("email").style.display = "none";
      document.getElementById("website").style.display = "none";
      document.getElementById("subjects").style.display = "block";
+     document.getElementById("mastermind").style.display = "none";
 }
 
 function copy() {
@@ -131,6 +152,4 @@ function copy() {
      copyText.setSelectionRange(0, 99999);
    
      navigator.clipboard.writeText(copyText.value);
-
-     
    }
